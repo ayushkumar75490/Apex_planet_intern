@@ -5,119 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Design Demo</title>
-  
+  <link rel="stylesheet" href="style.css">
 </head>
-<style>
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
 
-body {
-  background: #f4f4f4;
-}
-
-header {
-  background: #333;
-  color: #fff;
-  padding: 15px;
-  text-align: center;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  background: #555;
-  padding: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 15px;
-}
-
-nav a:hover {
-  background: #222;
-  border-radius: 5px;
-}
-
-.container {
-  display: flex;
-  padding: 20px;
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  flex: 1;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: #0056b3;
-}
-
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #333;
-  color: white;
-  margin-top: 20px;
-}
-
-/* Tablet View */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-/* Mobile View */
-@media (max-width: 480px) {
-  header {
-    font-size: 18px;
-  }
-
-  nav a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .card {
-    padding: 15px;
-  }
-}
-</style>
 <body>
-
 <header>
   <h1>Responsive Interactive Webpage</h1>
   <p>Resize the screen to see magic ✨</p>
@@ -152,27 +43,11 @@ footer {
 </div>
 
 <footer>
-  <p>© 2026 Responsive Design Demo</p>
+  <p>© Responsive Design Demo</p>
 </footer>
 
-
 </body>
-  
-<script>
-function showAlert() {
-  alert('Hello from Card 1!');
-}
-
-function changeColor(btn) {
-  btn.parentElement.style.background = '#d1ecf1';
-}
-
-function toggleText(btn) {
-  const text = btn.nextElementSibling;
-  text.style.display = text.style.display === 'none' ? 'block' : 'none';
-}
-</script>
-
+<script src="script.js"></script>
 </html>
 
 

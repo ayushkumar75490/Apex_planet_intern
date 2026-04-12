@@ -3,7 +3,7 @@ function showAlert() {
 }
 
 function changeColor(btn) {
-  btn.parentElement.style.background = '#d1ecf1';
+  btn.parentElement.style.background = '#0cf108';
 }
 
 function toggleText(btn) {

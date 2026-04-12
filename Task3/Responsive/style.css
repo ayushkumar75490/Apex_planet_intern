@@ -17,13 +17,13 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: rgb(251, 251, 251);
   text-decoration: none;
   padding: 8px 15px;
 }
 
 nav a:hover {
-  background: #222;
+  background: #1535ea;
   border-radius: 5px;
 }
 
@@ -43,22 +43,22 @@ nav a:hover {
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .btn {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
-  background: #007BFF;
+  background: #0055b1;
   color: white;
-  border: none;
+  border: 1px solid black;
   border-radius: 5px;
-  cursor: pointer;
+  cursor:pointer;
 }
 
 .btn:hover {
-  background: #0056b3;
+  background: #9eb3cb;
 }
 
 footer {
