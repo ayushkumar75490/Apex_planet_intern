@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="image.css">
+<title>Advanced Project</title>
+</head>
+
+<body>
+
+<h1>My Advanced Web Project </h1>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Quiz</a>
+    <a href="#">Products</a>
+    <a href="index.html">Response</a>
+</nav>
+
+<div class="container">
+
+<!-- QUIZ -->
+<div class="card">
+    <h2>Quiz</h2>
+    <p>What is 2 + 2?</p>
+    <button onclick="checkAnswer(3)">3</button>
+    <button onclick="checkAnswer(4)">4</button>
+    <button onclick="checkAnswer(5)">5</button>
+    <p id="result"></p>
+</div>
+
+<!-- CAROUSEL -->
+<div class="card">
+    <h2>Carousel</h2>
+    <img id="img" src="https://picsum.photos/id/1015/200/150">
+    <br>
+    <button onclick="prev()">Prev</button>
+    <button onclick="next()">Next</button>
+</div>
+
+<!-- API PRODUCTS -->
+<div class="card">
+    <h2>Products (API)</h2>
+    <button onclick="loadProducts()">Load Products</button>
+    <div id="products"></div>
+</div>
+
+</div>
+<script src="image.js"></script>
+
+</body>
+</html>
