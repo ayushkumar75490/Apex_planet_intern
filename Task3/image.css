@@ -1,0 +1,87 @@
+/* -------- BACKGROUND -------- */
+body {
+    margin: 0;
+    font-family: Arial;
+
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* -------- HEADER -------- */
+h1 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* -------- NAV -------- */
+nav {
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* -------- GRID -------- */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* -------- CARD -------- */
+.card {
+    background: rgba(255,255,255,0.9);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* -------- BUTTON -------- */
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    background: teal;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* -------- PRODUCTS -------- */
+#products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+}
+
+.product {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.product img {
+    width: 80px;
+    height: 80px;
+}
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
